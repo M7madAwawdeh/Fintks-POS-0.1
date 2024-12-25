@@ -1,0 +1,164 @@
+body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body.dark {
+      background-color: #2c3e50;
+      color: #ecf0f1;
+    }
+
+    body.blue-sky {
+      background-color: #e0f7fa;
+      color: #212121;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: var(--container-bg, #fff);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+    }
+
+    nav {
+      background-color: var(--nav-bg, #3498db);
+      padding: 15px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 12px;
+    }
+
+    nav a {
+      margin-right: 15px;
+      text-decoration: none;
+      color: var(--nav-text, #fff);
+      font-weight: 500;
+      transition: color 0.3s;
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+
+    nav a:hover {
+      text-decoration: none;
+      background-color: var(--nav-text-hover, rgba(255, 255, 255, 0.1));
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+      color: var(--text-color, #333);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: calc(100% - 20px);
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      font-size: 1em;
+      color: var(--text-color, #333);
+    }
+
+    button {
+      background-color: var(--button-bg, #2ecc71);
+      color: var(--button-text, #fff);
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      font-weight: 500;
+      margin: 4px;
+      font-size: 1em;
+    }
+
+    button:hover {
+      background-color: var(--button-bg-hover, #27ae60);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+      color: var(--text-color, #333);
+    }
+
+    th {
+      background-color: var(--table-header-bg, #3498db);
+      color: var(--table-header-text, #fff);
+      font-weight: 500;
+    }
+
+    body[dir="rtl"] nav {
+      flex-direction: row-reverse;
+    }
+
+    body[dir="rtl"] nav a {
+      margin-left: 15px;
+      margin-right: 0;
+    }
+
+    body[dir="rtl"] th,
+    body[dir="rtl"] td {
+      text-align: right;
+    }
+
+    body.dark {
+      --container-bg: #34495e;
+      --nav-bg: #2c3e50;
+      --nav-text: #ecf0f1;
+      --nav-text-hover: rgba(236, 240, 241, 0.1);
+      --button-bg: #e67e22;
+      --button-text: #fff;
+      --button-bg-hover: #d35400;
+      --table-header-bg: #2c3e50;
+      --table-header-text: #ecf0f1;
+      --text-color: #ecf0f1;
+    }
+
+    body.blue-sky {
+      --container-bg: #fff;
+      --nav-bg: #81d4fa;
+      --nav-text: #212121;
+      --nav-text-hover: rgba(0, 0, 0, 0.1);
+      --button-bg: #4fc3f7;
+      --button-text: #212121;
+      --button-bg-hover: #03a9f4;
+      --table-header-bg: #81d4fa;
+      --table-header-text: #212121;
+      --text-color: #212121;
+    }
+
+    body.dark .cart-section th,
+    body.dark .cart-section td,
+    body.dark .cart-section input,
+    body.dark .cart-section select {
+      color: #000;
+    }
